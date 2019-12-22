@@ -169,7 +169,7 @@ class BinarySearchTree {
       this.DFSInOrder(node.left, list);
     } 
     list.push(node.value);
-    console.log(node.value);
+   // console.log(node.value);
     if(node.right){
       this.DFSInOrder(node.right, list);
     }   
@@ -177,7 +177,7 @@ class BinarySearchTree {
   }
 
   DFSPreOrder(node, list){
-    console.log(node.value);
+   // console.log(node.value);
     list.push(node.value);
     if(node.left){
       this.DFSPreOrder(node.left, list);
@@ -195,7 +195,7 @@ class BinarySearchTree {
     if(node.right){
       this.DFSPostOrder(node.right, list);
     }  
-    console.log(node.value);
+   // console.log(node.value);
     list.push(node.value); 
     return list;
   }
@@ -217,6 +217,7 @@ tree.insert(1)
 console.log('DFSInOrder', tree.DFSInOrder(tree.root, []));
 console.log('DFSPreOrder', tree.DFSPreOrder(tree.root, []));
 console.log('DFSPostOrder', tree.DFSPostOrder(tree.root, []));
+
 
 //     9
 //  4     20
